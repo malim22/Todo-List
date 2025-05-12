@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Life Problem Solvers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Daily Life Problem Solvers</h1>
+        <nav>
+            <ul>
+                <li><a href="#calculator">Tip Calculator</a></li>
+                <li><a href="#currency">Currency Converter</a></li>
+                <li><a href="#todo">To-Do List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="calculator">
+            <h2>Tip Calculator</h2>
+            <input type="number" id="billAmount" placeholder="Bill Amount" />
+            <input type="number" id="tipPercentage" placeholder="Tip Percentage" />
+            <button onclick="calculateTip()">Calculate Tip</button>
+            <div id="tipResult"></div>
+        </section>
+
+        <section id="currency">
+            <h2>Currency Converter</h2>
+            <input type="number" id="amount" placeholder="Amount" />
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <select id="toCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <button onclick="convertCurrency()">Convert</button>
+            <div id="currencyResult"></div>
+        </section>
+
+        <section id="todo">
+            <h2>To-Do List</h2>
+            <input type="text" id="taskInput" placeholder="Enter a task" />
+            <button onclick="addTask()">Add Task</button>
+            <ul id="taskList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Daily Life Problem Solvers</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
